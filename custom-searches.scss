@@ -1,0 +1,867 @@
+/* -------------------------------------------------------- */
+/* -------------- CUSTOM SEARCH FILTER PAGES -------------- */
+/* ------------------- .live-training --------------------- */
+/* -------------------- .clicktips ------------------------ */
+/* ---------------- .productivity-expert ------------------ */
+/* --------------- .productivity-all-star ----------------- */
+/* ---------------- .productivity-pro --------------------- */
+/* -------------------- .webinars ------------------------- */
+/* -------------------------------------------------------- */
+
+.live-training,
+.clicktips,
+.productivity-expert,
+.productivity-all-star,
+.productivity-pro,
+.webinars {
+    min-width: 430px;
+
+    #skilljar-content {
+        min-height: 1100px;
+        padding-top: 45px !important;
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 470px;
+        background-image: url('https://clickup.com/landing/images/clickup-university/cuu_v2.1bg_2x_min.png');
+        background-size: cover;
+        background-position: bottom;
+
+        h1 {
+            font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+            font-size: 60px;
+            font-weight: 800;
+            // color: var(--grey0);
+        }
+
+        h2 {
+            font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--grey2);
+        }
+
+        #catalog-search-box {
+            width: 600px;
+
+            input#catalogSearchInput {
+                padding: 18px 25px;
+                height: 60px;
+                border-radius: 30px;
+                border: none;
+                box-shadow: 0px 15px 45px rgb(16 30 54 / 11%);
+            }
+
+            &::after {
+                right: 26px;
+                top: 20px;
+                color: var(--grey2);
+                font-size: 20px;
+            }
+        }
+    }
+    
+    #catalog-left-nav {
+    	border: none;
+        top: 470px;
+        position: absolute;
+        height: fit-content;
+        z-index: auto;
+
+        .catalog-left-nav-wrapper {
+            box-shadow: 0 15px 45px rgb(16 30 54 / 15%);
+            margin: 20px;
+            padding: 15px;
+            border-radius: 20px;
+
+            .filter-group-collapsed {
+                margin-bottom: 0;
+            }
+
+            .tag-labels {
+                padding-left: 24px;
+            }
+
+            .filter-group-collapsed + .tag-labels {
+                max-height: 5px;
+            }
+        }
+    }
+
+    #catalog-filter-menu {
+        a.focus-link-v2 {
+            color: var(--purple2);
+        }
+
+        h3.filter-group-title {
+            font-size: 21px;
+            border: none;
+        }
+        
+        .filter-option input[type=checkbox] {
+            background-color: var(--white);
+            border: 3px solid var(--purple2);
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+    
+            &:checked {
+                background-color: var(--purple2);
+
+                &::after {
+                    opacity: 1;
+                    width: 16px;
+                    text-align: center;
+                    height: 22px;
+                    line-height: 13px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .search {
+        min-height: 1100px;
+        margin-top: 45px;
+    }
+
+    #catalog-content,
+    .search #catalog-content {
+        padding: 0 40px 0 40px !important;
+        margin: 0;
+
+        #catalog-courses {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        a.coursebox-container {
+            margin: auto;
+            flex-direction: column;
+            height: auto;
+            padding: 30px;
+            min-height: 430px;
+            max-height: 430px;
+
+            &.course {
+                .sj-ribbon-wrapper {
+                    margin: 20px 30px;
+                }
+
+                .coursebox-callout {
+                    background-color: var(--purple2);
+
+                    &.course-time {
+                        background: none;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+
+                        span {
+                            color: var(--purple);
+
+                            &::before {
+                                background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 3.6C9.49706 3.6 9.9 4.00294 9.9 4.5V9C9.9 9.23869 9.80518 9.46761 9.6364 9.6364L6.4864 12.7864C6.13492 13.1379 5.56508 13.1379 5.2136 12.7864C4.86213 12.4349 4.86213 11.8651 5.2136 11.5136L8.1 8.62721V4.5C8.1 4.00294 8.50294 3.6 9 3.6Z' fill='%239B51E0'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 1.8C5.02355 1.8 1.8 5.02355 1.8 9C1.8 12.9764 5.02355 16.2 9 16.2C12.9764 16.2 16.2 12.9764 16.2 9C16.2 5.02355 12.9764 1.8 9 1.8ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z' fill='%239B51E0'/%3E%3C/svg%3E");
+                            }
+                        }
+                    }
+                }
+                
+                &.tag-beginner {
+                    .coursebox-text::before {
+                        content: 'COURSE: BEGINNER';
+                        font-size: 14px;
+                        display: block;
+                        line-height: 14px;
+                        color: var(--purple2);
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                &.tag-advanced {
+                    .coursebox-text::before {
+                        content: 'COURSE: ADVANCED';
+                        font-size: 14px;
+                        display: block;
+                        line-height: 14px;
+                        color: var(--cyan);
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+
+                    .coursebox-callout {
+                        background-color: var(--cyan);
+
+                        &.course-time {
+                            background-color: transparent;
+                            
+                            span {
+                                color: var(--cyan);
+
+                                &::before {
+                                    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 3.6C9.49706 3.6 9.9 4.00294 9.9 4.5V9C9.9 9.23869 9.80518 9.46761 9.6364 9.6364L6.4864 12.7864C6.13492 13.1379 5.56508 13.1379 5.2136 12.7864C4.86213 12.4349 4.86213 11.8651 5.2136 11.5136L8.1 8.62721V4.5C8.1 4.00294 8.50294 3.6 9 3.6Z' fill='%2349CCF9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 1.8C5.02355 1.8 1.8 5.02355 1.8 9C1.8 12.9764 5.02355 16.2 9 16.2C12.9764 16.2 16.2 12.9764 16.2 9C16.2 5.02355 12.9764 1.8 9 1.8ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z' fill='%2349CCF9'/%3E%3C/svg%3E");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.tag-pro {
+                    .coursebox-text::before {
+                        content: 'COURSE: PRO';
+                        font-size: 14px;
+                        display: block;
+                        line-height: 14px;
+                        color: var(--pink);
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+
+                    .coursebox-callout {
+                        background-color: var(--pink);
+
+                        &.course-time {
+                            background-color: transparent;
+
+                            span {
+                                color: var(--pink);
+                                
+                                &::before {
+                                    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 3.6C9.49706 3.6 9.9 4.00294 9.9 4.5V9C9.9 9.23869 9.80518 9.46761 9.6364 9.6364L6.4864 12.7864C6.13492 13.1379 5.56508 13.1379 5.2136 12.7864C4.86213 12.4349 4.86213 11.8651 5.2136 11.5136L8.1 8.62721V4.5C8.1 4.00294 8.50294 3.6 9 3.6Z' fill='%23FD71AF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 1.8C5.02355 1.8 1.8 5.02355 1.8 9C1.8 12.9764 5.02355 16.2 9 16.2C12.9764 16.2 16.2 12.9764 16.2 9C16.2 5.02355 12.9764 1.8 9 1.8ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z' fill='%23FD71AF'/%3E%3C/svg%3E");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.tag-admin {
+                    .coursebox-text::before {
+                        content: 'COURSE: ADMIN';
+                        font-size: 14px;
+                        display: block;
+                        line-height: 14px;
+                        color: var(--green);
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+
+                    .coursebox-callout {
+                        background-color: var(--green);
+
+                        &.course-time {
+                            background-color: transparent;
+
+                            span {
+                                color: var(--green);
+                                
+                                &::before {
+                                    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 3.6C9.49706 3.6 9.9 4.00294 9.9 4.5V9C9.9 9.23869 9.80518 9.46761 9.6364 9.6364L6.4864 12.7864C6.13492 13.1379 5.56508 13.1379 5.2136 12.7864C4.86213 12.4349 4.86213 11.8651 5.2136 11.5136L8.1 8.62721V4.5C8.1 4.00294 8.50294 3.6 9 3.6Z' fill='%2300B884'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 1.8C5.02355 1.8 1.8 5.02355 1.8 9C1.8 12.9764 5.02355 16.2 9 16.2C12.9764 16.2 16.2 12.9764 16.2 9C16.2 5.02355 12.9764 1.8 9 1.8ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z' fill='%2300B884'/%3E%3C/svg%3E");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .coursebox-text {
+                margin: 50px 0 0 0;
+                line-height: 45px;
+            }
+
+            .coursebox-text-description {
+                margin: 10px 0 30px;
+            }
+
+            .coursebox-callout {
+                padding: 20px;
+                bottom: 30px;
+                position: absolute;
+                box-shadow: 0px 10px 25px rgb(123 104 238 / 20%);
+
+                &.course-time {
+                    padding: 0;
+                    margin: 0;
+                    box-shadow: none;
+                }
+
+                span {
+                    margin: 30px;
+                }
+            }
+        }
+
+        .storefront-price,
+        .coursebox-image {
+            display: none;
+        }
+    }
+
+    .tile-counter-container {
+        display: none;
+    }
+
+    #ep-footer {
+        margin: 20px 0;
+    }
+}
+
+/* ============================================= */
+/* =============== MEDIA QUERIES =============== */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+@media (min-width: 1px) {
+    .live-training,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        .search-container {
+            h1 {
+                font-size: 40px;
+                text-align: center;
+                padding: 0 15px;
+            }
+
+            h2 {
+                padding: 10px 30px;
+                text-align: center;
+                max-width: 900px;
+                color: #7C828D;
+            }
+
+            #catalog-search-box {
+                width: 85%;
+            }
+        }
+
+        #catalog-left-nav {
+            position: fixed;
+            top: 45px;
+            z-index: 990;
+        }
+
+        #catalog-content,
+        .search #catalog-content {
+            #catalog-courses {
+                grid-template-columns: 1fr;
+
+                a.coursebox-container {
+                    max-width: 500px;
+                    min-height: fit-content;
+                    max-block-size: fit-content;
+
+                    &.course {
+                        .coursebox-text-description {
+                            margin: 10px 0 30px;
+                        }
+
+                        .coursebox-callout {
+                            position: relative;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                        }
+
+                        .course-time {
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .live-training,
+    .clicktips {
+        #main-container #catalog-search-box {
+            display: none;
+        }
+
+        .search-container {
+             h1 {
+                margin-bottom: 15px;
+             }
+
+             h2 {
+                max-width: 955px;
+                font-size: 17px;
+                line-height: 29px;
+                padding: 10px 0px;
+             }
+        }
+
+        #catalog-content,
+        .search #catalog-content {
+            #catalog-courses {
+                gap: 30px;
+            }
+
+            a.coursebox-container {
+                height: 100%;
+                width: 100%;
+                padding-bottom: 100px;
+
+                &::before {
+                    content: "";
+                    border: none;
+                    width: fit-content;
+                    height: fit-content;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    top: 65px;
+                    left: 25px;
+                    z-index: 10;
+                    position: absolute;
+                }
+
+                &.tag-workshop-novice::before {
+                    color: var(--purple);
+                }
+
+                &.tag-workshop-intremediate::before {
+                    color: var(--cyan);
+                }
+
+                &.tag-workshop-expert::before {
+                    color: var(--green);
+                }
+
+                &:not([data-course-status="unregistered"]) {
+                    .storefront-price {
+                        display: none !important;
+                    }
+                }
+
+                .sj-ribbon-wrapper {
+                    margin: 29px !important;
+                }
+
+                .coursebox-image {
+                    display: block !important;
+
+                    img {
+                        height: unset;
+                        width: unset;
+                        margin: 80px auto 20px;
+                        border-radius: 15px;
+                    }
+                }
+
+                .coursebox-text {
+                    margin-top: 0 !important;
+                }
+
+                .coursebox-tags ~ .coursebox-callout {
+                    background-color: var(--purple);
+                }
+
+                .tag-course {
+                    padding-top: 50px;
+                }
+            }
+        }
+    }
+
+    .live-training {
+        .lt-nav {
+            box-shadow: 0px 10px 15px rgba(173, 172, 173, 0.22);
+            background: -webkit-linear-gradient(45deg, #8B21FE, #C438CE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 10px 15px;
+            border-radius: 15px;
+            font-weight: 700;
+            transition-duration: 0.1s;
+    
+            &:hover {
+                border: none !important;
+                transform: scale(0.97);
+                box-shadow: 0px 2px 5px rgba(173, 172, 173, 0.22);
+            }
+        }
+    }
+
+    .clicktips {
+        .ct-nav {
+            box-shadow: 0px 10px 15px rgba(173, 172, 173, 0.22);
+            background: -webkit-linear-gradient(45deg, #8B21FE, #C438CE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 10px 15px;
+            border-radius: 15px;
+            font-weight: 700;
+            transition-duration: 0.1s;
+    
+            &:hover {
+                border: none !important;
+                transform: scale(0.97);
+                box-shadow: 0px 2px 5px rgba(173, 172, 173, 0.22);
+            }
+        }
+
+        #skilljar-content  {
+            padding-top: 0px !important;
+
+            .search {
+                margin-top: 0px !important;
+            }
+        }
+
+        .search-container {
+            background-image: none;
+            height: unset !important;
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+
+            #catalog-search-box {
+                display: block !important;
+                margin: 20px 0 40px;
+                width: 100%;
+            }
+        }
+
+        .catalog-header,
+        .search .catalog-header {
+            background: url('https://clickup.com/landing/images/clickup-university/cuu_v2.1bg_2x_min.png') no-repeat center bottom;
+            background-size: cover;
+            text-align: center;
+            padding-top: 145px !important;
+            padding-bottom: 100px !important;
+            margin-bottom: 60px;
+            display: block;
+
+            h1 {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                font-size: 60px;
+                font-weight: 800;
+                color: var(--grey0);
+                text-align: center;
+                padding: 0 15px;
+                margin: auto;
+            }
+
+            h2 {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                font-size: 17px;
+                font-weight: 400;
+                color: var(--grey2);
+                padding: 10px 30px;
+                text-align: center;
+                max-width: 900px;
+                margin: auto;
+            }
+        }
+
+        #catalog-courses,
+        .search #catalog-courses {
+            grid-template-columns: 1fr !important;
+            margin: auto;
+            max-width: 420px;
+
+            a.coursebox-container {
+                max-height: unset;
+
+                .coursebox-image {
+                    float: unset;
+                    width: 100%;
+                    height: unset;
+                    max-height: unset;
+
+                    img {
+                        margin-top: 30px !important;
+                        max-height: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 560px) {
+    .live-training,
+    .clicktips,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        .search-container {
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 768px) {
+    .live-training,
+    .clicktips,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        .search-container {
+            #catalog-search-box {
+                width: 600px;
+            }
+        }
+
+        #catalog-courses {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 875px) {
+    .live-training,
+    .clicktips,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        #catalog-left-nav {
+            position: absolute;
+            top: 470px;
+            z-index: auto;
+        }
+
+        #catalog-content,
+        .search #catalog-content {
+            #catalog-courses {
+                grid-template-columns: 1fr;
+                
+                a.coursebox-container {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .clicktips {
+        .catalog-filters {
+            #catalog-left-nav {
+                top: 480px;
+            }
+
+            #skilljar-content {
+                margin-left: 0 !important;
+
+                #catalog-content,
+                .search #catalog-content {
+                    margin-left: 150px;
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1000px) {
+    .live-training,
+    .clicktips,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        .search-container {
+            h1 {
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1200px) {
+    .live-training,
+    .clicktips,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        #catalog-content,
+        .search #catalog-content {
+            #catalog-courses {
+                grid-template-columns: repeat(2, 1fr);
+                
+                a.coursebox-container {
+                    min-height: 500px;
+    
+                    &.course {
+                        .coursebox-callout {
+                            position: absolute;
+                            bottom: 30px;
+                            left: 24px;
+                            right: 24px;
+                        }
+    
+                        .course-time {
+                            span {
+                                margin: 30px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .clicktips {
+        #catalog-content,
+        .search #catalog-content {
+            #catalog-courses {
+                max-width: 850px;
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1340px) {
+    .live-training,
+    .clicktips,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        #catalog-content,
+        .search #catalog-content {
+            #catalog-courses {
+                a.coursebox-container {
+                    min-height: 460px;
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1575px) {
+    .live-training,
+    .clicktips,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        .search-container {
+            height: 520px;
+        }
+
+        #catalog-left-nav {
+            top: 520px;
+        }
+
+        #catalog-content,
+        .search #catalog-content {
+            #catalog-courses {
+                grid-template-columns: repeat(3, 1fr);
+
+                a.coursebox-container {
+                    min-height: 500px;
+                }
+            }
+        }
+    }
+
+    .clicktips {
+        #catalog-content,
+        .search #catalog-content {
+            .search-container {
+                height: unset;
+            }
+
+            #catalog-courses {
+                max-width: 1200px;
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1800px) {
+    .live-training,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        #catalog-content,
+        .search #catalog-content {
+            #catalog-courses {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 2000px) {
+    .live-training,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        .search-container {
+            height: 560px;
+        }
+
+        #catalog-left-nav {
+            top: 560px;
+        }
+        
+        #catalog-content,
+        .search #catalog-content {
+            #catalog-courses {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+
+    .clicktips {
+        .catalog-header,
+        .search .catalog-header {
+            padding-bottom: 180px !important;
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 2600px) {
+    .live-training,
+    .productivity-expert,
+    .productivity-all-star,
+    .productivity-pro,
+    .webinars {
+        #catalog-content,
+        .search #catalog-content {
+            #catalog-courses {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    }
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* ============================================= */
