@@ -1,0 +1,213 @@
+/* ------------------------------------------------- */
+/* ----------------- GLOBAL STYLES ----------------- */
+/* ------------------------------------------------- */
+
+body {
+    font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+
+    &::before {
+        content: '';
+        width: 100vw;
+        border-image-source: linear-gradient(to right, var(--purple), var(--pink), var(--yellow));
+        border-top: 7px solid;
+        border-image-slice: 1;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        min-width: 420px;
+    }
+
+    #main-container {
+        #header {
+            // width: 100vw;
+        }
+
+        #skilljar-content {
+            padding-top: 70px;
+            min-width: 420px;
+
+            .top-row {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+#ep-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+    min-width: 420px;
+    border: none;
+    
+    #footer-left,
+    .right {
+        display: none;
+    }
+    
+    #footer-logo {
+        width: 200px;
+        margin: 20px auto 50px;
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        
+        a {
+            color: var(--grey0);
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+}
+
+.btn {
+    background: var(--purple);
+    color: var(--white);
+    border-radius: 30px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    padding: 18px 30px;
+    width: fit-content;
+}
+
+.btn-inverse {
+    background: var(--white);
+    color: var(--purple);
+}
+
+/* --------------------------------------- */
+/* ------------ progress bars ------------ */
+/* --------------------------------------- */
+
+#path-curriculum-progress-bar,
+.sj-page-curriculum .progress-bar {
+    margin: 1em 2em 1.2em;
+    background: rgba(123, 104, 238, .2);
+    max-height: 18px !important;
+    border: none;
+    box-shadow: 0px 15px 45px rgb(16, 30, 54, 15%);
+    overflow: hidden;
+}
+
+.progress-bar.button-background,
+.progress-bar-inner.button-background {
+    background: rgba(123, 104, 238, 1);
+}
+
+.path-curriculum-resume-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+
+    #path-curriculum-progress-bar-annotation-text {
+        position: relative !important;
+    }
+}
+
+#path-curriculum-progress-bar-annotation {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+#path-curriculum-progress-bar-annotation-text {
+    color: var(--grey1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* --------------------------------------- */
+/* -------- course status labels --------- */
+/* --------------------------------------- */
+
+.sj-ribbon-wrapper {
+    overflow: visible;
+    width: fit-content;
+    height: fit-content;
+    margin: 30px;
+    
+    .sj-ribbon {
+        transform: none;
+        left: auto;
+        top: auto;
+        font-size: 14px;
+        padding: 11px 20px;
+        width: auto;
+        background: var(--white) !important;
+        border: 1px solid;
+        box-shadow: none;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+        
+        &.sj-ribbon-registered {
+            border-color: var(--purple) !important;
+            color: var(--purple) !important;
+        }
+        
+        &.sj-ribbon-complete {
+            border-color: var(--green) !important;
+            color: var(--green) !important;
+
+            span::before {
+                background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5L5 9L13 1' stroke='%2300B884' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                content: '';
+                display: inline-block;
+                width: 14px;
+                height: 10px;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+
+/* ============================================= */
+/* =============== MEDIA QUERIES =============== */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+@media (min-width: 560px) {
+
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 768px) {
+    #skilljar-content {
+        padding-top: 115px;
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1000px) {
+    #skilljar-content {
+        padding-top: 0px;
+    }
+
+    #ep-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+        margin: 20px;
+    }
+
+    #ep-footer #footer-logo {
+        margin: 20px;
+    }
+
+    #ep-footer ul {
+        gap: 50px;
+        margin: 0;
+    }
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* ============================================= */
+/* ============================================= */
