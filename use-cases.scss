@@ -1,0 +1,216 @@
+/* -------------------------------------------------------- */
+/* ------------------------- PAGE ------------------------- */
+/* ---------------------- .use-cases ---------------------- */
+/* -------------------------------------------------------- */
+
+@media (min-width: 1px) {
+    .use-cases {
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url('https://clickup.com/landing/images/clickup-university/cuu_v2.1bg_2x_min.png');
+            background-size: cover;
+            background-position: bottom;
+            padding: 100px 30px;
+    
+            h1 {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                font-size: 60px;
+                font-weight: 800;
+                // color: var(--grey0);
+            }
+    
+            h2 {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                font-size: 18px;
+                font-weight: 400;
+                text-align: center;
+                color: var(--grey2);
+                padding: 0 30px;
+            }
+    
+            #catalog-search-box {
+                display: none;
+            }
+        }
+
+        #catalog-content {
+            padding: 0 !important;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        #catalog-courses {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            max-width: 600px;
+            padding: 30px;
+            margin: auto;
+
+            a.coursebox-container {
+                flex-direction: column;
+                height: 100%;
+                padding: 30px 30px 100px;
+                box-shadow: 0px 15px 45px rgba(16, 30, 54, 0.06);
+                border-radius: 30px;
+
+                // Course type labels
+                &::before {
+                    content: ' ';
+                    display: block;
+                    position: relative;
+                    top: 40px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+
+                &.tag-use-case {
+                    &::before {
+                        content: "Use case";
+                        color: var(--pink);
+                    }
+
+                    &.tag-novice {
+                        &::before {
+                            content: "Use case: Novice";
+                            // color: var(--purple);
+                        } 
+                    }
+
+                    &.tag-intermediate {
+                        &::before {
+                            content: "Use case: Intermediate";
+                            // color: var(--cyan);
+                        } 
+                    }
+                    
+                    &.tag-expert {
+                        &::before {
+                            content: "Use case: Expert";
+                            // color: var(--green);
+                        } 
+                    }
+                }
+
+                &.sj-course-series {
+                    &::before {
+                        border: none;
+                        box-shadow: none;
+                        z-index: unset;
+                    }
+                }
+
+                .course-time {
+                    height: fit-content;
+                    margin: 30px;
+                    padding: 0;
+
+                    span {
+                        margin: 0;
+                    }
+                }
+
+                .storefront-price {
+                    display: none;
+                    // position: absolute;
+                    // width: fit-content;
+                    // height: fit-content;
+                    // top: 30px;
+                    // left: unset;
+                    // right: 30px;
+                    // margin: 0;
+                    // padding: 10px;
+                }
+
+                .coursebox-callout:not(.course-time) {
+                    position: absolute;
+                    bottom: 30px;
+                    font-size: 14px;
+                    font-weight: 800;
+                    padding: 20px;
+                }
+
+                .coursebox-image {
+                    margin-top: 50px;
+                    border-radius: 15px;
+                }
+
+                .coursebox-text {
+                    margin: 20px 0 0;
+                }
+
+                .coursebox-text-description {
+                    margin: 20px 0;
+                }
+
+                .course-series-count {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 560px) {
+  
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 768px) {
+    .use-cases {
+        #catalog-courses {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 1200px;
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 875px) {
+  
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1000px) {
+  
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1200px) {
+    .use-cases {
+        #catalog-courses {
+            grid-template-columns: repeat(3, 1fr);
+            min-width: 1080px;
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1340px) {
+  
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1800px) {
+    .use-cases {
+        .search-container {
+            padding-bottom: 200px;
+        }
+    }
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* ============================================= */
+/* ============================================= */
