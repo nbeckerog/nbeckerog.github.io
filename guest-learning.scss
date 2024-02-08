@@ -1,0 +1,274 @@
+/* -------------------------------------------------------- */
+/* ------------------ GUEST LEARNING PAGE ----------------- */
+/* ------------------ .guests-start-here ------------------ */
+/* -------------------------------------------------------- */
+
+.guests-start-here {
+    #skilljar-content {
+        #guest-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 470px;
+            background-image: url(https://clickup.com/landing/images/clickup-university/cuu_v2.1bg_2x_min.png);
+            background-size: cover;
+            background-position: bottom;
+    
+            h1 {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                font-size: 60px;
+                font-weight: 800;
+                color: var(--grey0);
+            }
+
+            h2 {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                font-size: 18px;
+                font-weight: 400;
+                color: var(--grey2);
+            }
+        }
+    }
+
+    #catalog-content,
+    .search #catalog-content {
+        padding: 40px 8% 100px !important;
+        margin: 0;
+
+        #catalog-courses {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        a.coursebox-container {
+            margin: auto;
+            flex-direction: column;
+            height: auto;
+            padding: 30px;
+            min-height: 430px;
+            max-height: 430px;
+
+            &.course {
+                .coursebox-callout {
+                    background-color: var(--purple);
+
+                    &.course-time {
+                        background: none;
+                    }
+                }
+                
+                &.tag-beginner {
+                    .coursebox-text::before {
+                        content: 'COURSE: BEGINNER';
+                        font-size: 14px;
+                        display: block;
+                        line-height: 14px;
+                        color: var(--purple);
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                &.tag-advanced {
+                    .coursebox-text::before {
+                        content: 'COURSE: ADVANCED';
+                        font-size: 14px;
+                        display: block;
+                        line-height: 14px;
+                        color: var(--cyan);
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+
+                    .coursebox-callout {
+                        background-color: var(--cyan);
+
+                        &.course-time {
+                            background-color: transparent;
+                            
+                            span {
+                                color: var(--cyan);
+
+                                &::before {
+                                    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 3.6C9.49706 3.6 9.9 4.00294 9.9 4.5V9C9.9 9.23869 9.80518 9.46761 9.6364 9.6364L6.4864 12.7864C6.13492 13.1379 5.56508 13.1379 5.2136 12.7864C4.86213 12.4349 4.86213 11.8651 5.2136 11.5136L8.1 8.62721V4.5C8.1 4.00294 8.50294 3.6 9 3.6Z' fill='%2349CCF9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 1.8C5.02355 1.8 1.8 5.02355 1.8 9C1.8 12.9764 5.02355 16.2 9 16.2C12.9764 16.2 16.2 12.9764 16.2 9C16.2 5.02355 12.9764 1.8 9 1.8ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z' fill='%2349CCF9'/%3E%3C/svg%3E");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.tag-pro {
+                    .coursebox-text::before {
+                        content: 'COURSE: PRO';
+                        font-size: 14px;
+                        display: block;
+                        line-height: 14px;
+                        color: var(--pink);
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+
+                    .coursebox-callout {
+                        background-color: var(--pink);
+
+                        &.course-time {
+                            background-color: transparent;
+
+                            span {
+                                color: var(--pink);
+                                
+                                &::before {
+                                    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 3.6C9.49706 3.6 9.9 4.00294 9.9 4.5V9C9.9 9.23869 9.80518 9.46761 9.6364 9.6364L6.4864 12.7864C6.13492 13.1379 5.56508 13.1379 5.2136 12.7864C4.86213 12.4349 4.86213 11.8651 5.2136 11.5136L8.1 8.62721V4.5C8.1 4.00294 8.50294 3.6 9 3.6Z' fill='%23FD71AF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 1.8C5.02355 1.8 1.8 5.02355 1.8 9C1.8 12.9764 5.02355 16.2 9 16.2C12.9764 16.2 16.2 12.9764 16.2 9C16.2 5.02355 12.9764 1.8 9 1.8ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z' fill='%23FD71AF'/%3E%3C/svg%3E");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.tag-admin {
+                    .coursebox-text::before {
+                        content: 'COURSE: ADMIN';
+                        font-size: 14px;
+                        display: block;
+                        line-height: 14px;
+                        color: var(--green);
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+
+                    .coursebox-callout {
+                        background-color: var(--green);
+
+                        &.course-time {
+                            background-color: transparent;
+
+                            span {
+                                color: var(--green);
+                                
+                                &::before {
+                                    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 3.6C9.49706 3.6 9.9 4.00294 9.9 4.5V9C9.9 9.23869 9.80518 9.46761 9.6364 9.6364L6.4864 12.7864C6.13492 13.1379 5.56508 13.1379 5.2136 12.7864C4.86213 12.4349 4.86213 11.8651 5.2136 11.5136L8.1 8.62721V4.5C8.1 4.00294 8.50294 3.6 9 3.6Z' fill='%2300B884'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 1.8C5.02355 1.8 1.8 5.02355 1.8 9C1.8 12.9764 5.02355 16.2 9 16.2C12.9764 16.2 16.2 12.9764 16.2 9C16.2 5.02355 12.9764 1.8 9 1.8ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z' fill='%2300B884'/%3E%3C/svg%3E");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .coursebox-text {
+                margin: 50px 0 0 0;
+                line-height: 45px;
+            }
+
+            .coursebox-text-description {
+                margin: 10px 0 30px;
+            }
+
+            .coursebox-callout {
+                padding: 20px;
+                bottom: 30px;
+                position: absolute;
+                box-shadow: 0px 10px 25px rgb(123 104 238 / 20%);
+
+                &.course-time {
+                    padding: 0;
+                    margin: 0;
+                    box-shadow: none;
+                }
+
+                span {
+                    margin: 30px;
+                }
+            }
+        }
+
+        .storefront-price,
+        .coursebox-image {
+            display: none;
+        }
+    }
+}
+
+/* ============================================= */
+/* =============== MEDIA QUERIES =============== */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+@media (min-width: 1px) {
+    .guests-start-here {
+        #skilljar-content {
+            #guest-header {
+                text-align: center;
+                padding: 0 20px;
+            }
+        }
+
+        #catalog-content {
+            #catalog-courses {
+                grid-template-columns: 1fr;
+
+                a.coursebox-container {
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 560px) {
+  
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 768px) {
+  
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 875px) {
+    .guests-start-here {
+        #catalog-content {
+            #catalog-courses {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1000px) {
+  
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1200px) {
+  
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1340px) {
+    .guests-start-here {
+        #catalog-content {
+            #catalog-courses {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1800px) {
+  
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* ============================================= */
+/* ============================================= */
