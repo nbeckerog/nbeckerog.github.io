@@ -1,0 +1,199 @@
+.v1.sj-page-checkout {
+    #main-container {
+        #header {
+            width: 82.6%;
+            margin: 0 8.6%;
+            background: var(--grey4) !important;
+            #header-left {
+                @media screen and (min-width:1200px) {
+                    left: 60px;
+                }
+            }
+            #header-right #custom-nav-bar ul {
+                @media screen and (min-width:1200px) {
+                    padding-right: 75px;
+                }
+            }
+        }
+        #skilljar-content {
+            background-image: url(https://clickup.com/landing/images/clickup-university/cuu_v2.1bg_2x_min.png);
+            background-size: cover;
+            background-color: var(--grey4);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 100%;
+            .white-bg.grey-bottom-border {
+                background: transparent;
+            }
+            #quantity-section {
+                .columns.large-centered {
+                    background: #FFFFFF;
+                    box-shadow: 0px 24px 64px rgb(38 33 74 / 10%);
+                    backdrop-filter: blur(94px);
+                    border-radius: 12px;
+                    margin-top: 80px;
+                    padding: 75px 37px 105px;
+                    margin-bottom: 80px;
+                }
+            }
+            h2.sj-text-review-order {
+                span {
+                    font-family: 'Axiforma';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 42px;
+                    line-height: 65px;
+                    display: flex;
+                    align-items: center;
+                    color: #292D34;
+                }
+            }
+            .payment-review-order {
+                .row.grey-top-border {
+                    border: 1px solid #D6D9DE;
+                   &:nth-child(2) {
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-bottom: none;
+                    padding: 22px 50px 22px 36px;
+                   }
+                   &:nth-child(3) {
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    padding: 12px 50px 22px 36px;
+                   }
+                   &:last-child {
+                       border: none;
+                   }
+                   .header.sj-text-description {
+                    font-family: 'Axiforma';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #292D34;
+                   }
+                   .item.break-word {
+                    font-family: 'Axiforma';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 32px;
+                    color: #7C828D;
+                   }
+                   .item {
+                    padding-top: 8px;
+                    .promo-code {
+                        .promo-form {
+                            input#promo-code-val {
+                            border: 1px solid #D6D9DE;
+                            border-radius: 5px;
+                            }
+                            #promo-code-submit {
+                                background: #ADB3BD;
+                                border-radius: 6px;
+                                font-family: 'Axiforma';
+                                font-style: normal;
+                                font-weight: 800;
+                                font-size: 12px;
+                                text-align: center;
+                                color: #FFFFFF;
+                                min-width: 75px;
+                                min-height: 32px;
+                            }
+                        }
+                    }
+                   }
+                   #quantity-val {
+                    background: #FFFFFF;
+                    border: 1px solid #D6D9DE;
+                    border-radius: 5px;
+                    padding: 4px 5px;
+                    font-family: 'Axiforma';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 32px;
+                    color: #7C828D;
+                    margin-top: 5px;
+                   }
+                   #offer-price-cents.item, #subtotal.item {
+                    font-family: 'Axiforma';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 32px;
+                    text-align: right;
+                    color: #7C828D;
+                   }
+                   #self-purchase-form {
+                    margin-bottom: 0px;
+                    input[type=checkbox]
+                       {
+                        border: 1px solid #ADB3BD;
+                        border-radius: 4px;
+                       }
+                       .checkbox-label {
+                        font-family: 'Axiforma';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #7C828D;
+                       }
+                   }
+                   .header {
+                    font-size: 16px;
+                    line-height: 32px;
+                    padding-top: 15px;
+                   }
+                }
+            }
+            .columns.checkout-options {
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                margin-top: 32px;
+                @media screen and (max-width: 768px) {
+                    flex-direction: column-reverse;
+                }
+            }
+            #privacy-policy.privacy-policy  {
+                width: calc(100% - 300px);
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .privacy-policy p {
+                font-family: 'Axiforma';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 17px;
+                color: #000000;
+                margin: 0px;
+                a {
+                    white-space: nowrap;
+                    color: #7B68EE;
+                    text-decoration: underline;
+                }
+            }
+            #self-purchase-button {
+                border-radius: 9px;
+                width: 271px;
+                padding: 20px 63px;
+                font-family: 'Axiforma';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 15.68px;
+                line-height: 18px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

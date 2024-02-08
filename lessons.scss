@@ -1,0 +1,605 @@
+/* ----------------------------------------------------------- */
+/* ---------------------- LESSON PAGES ----------------------- */
+/* -------------------- REGISTERED USERS --------------------- */
+/* ------------------ .sj-page-curriculum -------------------- */
+/* ----------------------------------------------------------- */
+
+.sj-page-curriculum {
+    .top-row-grey {
+        font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+        background: url('https://clickup.com/landing/images/clickup-university/cuu_v2.1bg_2x_min.png') no-repeat center bottom;
+        background-size: cover;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+    }
+    
+    .cp-summary-row-v2 {
+        border-radius: 15px;
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+    
+    .dp-row-flex-v2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .cp-promo-image-wrapper {
+        width: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .cp-summary-wrapper {
+        font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+        border: none;
+        width: auto;
+        left: auto;
+        right: auto;
+
+        h1, h2, span, #resume-button a {
+            font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+            border: none;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: 800;
+            line-height: 69px;
+        }
+        
+        h2 {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 800;
+            line-height: 16px;
+            color: var(--grey1);
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        #resume-button a {
+            background: var(--purple);
+            border-radius: 30px;
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 800;
+            width: 180px;
+        }
+    }
+
+    .progress-bar {
+        max-width: 75% !important;
+        height: 18px;
+        border-radius: 20px;
+        
+        .progress-bar-inner {
+            height: 18px;
+        }
+    }
+
+    .section-container {
+        &.tabs {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    
+        section {
+            p.title {
+                display: none;
+            }
+    
+            h3 {
+                font-size: 40px !important;
+            }
+            
+            .content {
+                display: block !important;
+                margin-top: 40px;
+                border: none;
+            }
+            
+            p,
+            [data-block-id="block-439b2f4c-981e-4d2e-a3f6-cf0f609004be"] {
+                color: var(--grey0);
+                font-size: 18px;
+                line-height: 28px;
+                padding-bottom: 60px !important;
+                border-bottom: 2px solid var(--grey3);
+            }
+        }
+    
+        .content {
+            h2 strong {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                font-size: 40px;
+            }
+            
+            hr {
+                display: none;
+            }
+            
+            h3 {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+            }
+        }
+    }
+
+    #cp-content {
+        #curriculum-list {
+            box-shadow: 0px 10px 35px rgb(0 0 0 / 10%);
+            border-radius: 30px;
+            padding: 0px 0 20px;
+    
+            .lesson-section {
+                background: var(--grey4);
+                padding: 20px;
+                border-radius: 30px 30px 0 0;
+                
+                h3 {
+                    font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                    font-size: 25px !important;
+                }
+            }
+            
+            .lesson-row {
+                .type-icon {
+                    display: none !important;
+                }
+                
+                .title {
+                    color: var(--grey0);
+                    left: 55px;
+                    right: 45px;
+            
+                    .sj-lesson-time {
+                        color: var(--purple);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .sj-lesson-time {
+        color: var(--purple);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100px;
+    }
+
+    .sj-course-time,
+    .sj-lesson-time {
+        float: right;
+    
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            position: relative;
+            background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 3.6C9.49706 3.6 9.9 4.00294 9.9 4.5V9C9.9 9.23869 9.80518 9.46761 9.6364 9.6364L6.4864 12.7864C6.13492 13.1379 5.56508 13.1379 5.2136 12.7864C4.86213 12.4349 4.86213 11.8651 5.2136 11.5136L8.1 8.62721V4.5C8.1 4.00294 8.50294 3.6 9 3.6Z' fill='%237B68EE'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 1.8C5.02355 1.8 1.8 5.02355 1.8 9C1.8 12.9764 5.02355 16.2 9 16.2C12.9764 16.2 16.2 12.9764 16.2 9C16.2 5.02355 12.9764 1.8 9 1.8ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z' fill='%237B68EE'/%3E%3C/svg%3E");
+        }
+        
+        &::after {
+            content: '';
+        }
+    }
+    
+    #showAll {
+        text-transform: uppercase;
+    }
+    
+    .fa-caret-down {
+        color: var(--grey0);
+    }
+}
+
+/* --------------------------------------- */
+/* --------- lesson page content --------- */
+/* ----------- .sj-page-lesson ----------- */
+/* ----- also includes live training ----- */
+/* ---------- registration pages --------- */
+/* --------------------------------------- */
+
+.sj-page-lesson {
+    #left-nav-button {
+        display: none;
+    }
+    
+    #main-container {
+        #menu-btn {
+            background-color: var(--purple);
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            position: absolute;
+            bottom: 70px;
+            right: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.75 0.928558C1.19772 0.928558 0.75 1.37627 0.75 1.92856C0.75 2.48084 1.19772 2.92856 1.75 2.92856H18.25C18.8023 2.92856 19.25 2.48084 19.25 1.92856C19.25 1.37627 18.8023 0.928558 18.25 0.928558H1.75ZM1.75 5.64284C1.19772 5.64284 0.75 6.09056 0.75 6.64284C0.75 7.19512 1.19772 7.64284 1.75 7.64284H14.5833C15.1356 7.64284 15.5833 7.19512 15.5833 6.64284C15.5833 6.09056 15.1356 5.64284 14.5833 5.64284H1.75ZM0.75 11.3572C0.75 10.8049 1.19772 10.3572 1.75 10.3572H18.25C18.8023 10.3572 19.25 10.8049 19.25 11.3572C19.25 11.9094 18.8023 12.3572 18.25 12.3572H1.75C1.19772 12.3572 0.75 11.9094 0.75 11.3572ZM1.75 15.0714C1.19772 15.0714 0.75 15.5191 0.75 16.0714C0.75 16.6237 1.19772 17.0714 1.75 17.0714H14.5833C15.1356 17.0714 15.5833 16.6237 15.5833 16.0714C15.5833 15.5191 15.1356 15.0714 14.5833 15.0714H1.75Z' fill='white'/%3E%3C/svg%3E");
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            box-shadow: 0px 10px 15px rgb(0 0 0 / 25%);
+            z-index: 99999;
+            
+            &:hover {
+                bottom: 68px;
+                box-shadow: 0px 8px 13px rgb(0 0 0 / 30%);
+            }
+        }
+
+        #lp-content {
+            font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+
+            #lesson-main-content {
+                .course-text-content {
+                    font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                    margin: auto;
+
+                    h4 {
+                        font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    
+    #lp-left-nav {
+        position: absolute;
+        right: 20px;
+        bottom: 90px;
+        top: auto;
+        left: auto !important;
+        z-index: 999;
+        height: 65vh;
+        box-shadow: 0px 10px 35px rgb(0 0 0 / 20%);
+        border-radius: 30px;
+        display: none;
+
+        h1 {
+            &.course-title {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                font-size: 30px;
+                font-weight: 800;
+                line-height: 40px;
+                margin: 0;
+                padding: 40px 20px 20px;
+                
+                span {
+                    color: var(--purple);
+                    font-size: 14px;
+                    font-weight: 400;
+                    
+                    &::before {
+                        content: '\A';
+                        white-space: pre-line;
+                    }
+                    
+                    &::after {
+                        content: '';
+                    }
+                }
+            }
+        }
+
+        h3 {
+            &.section-title {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+                font-weight: 800;
+                border: none;
+            }
+        }
+
+        .lesson {
+            &:active {
+                background: var(--purple);
+            }
+        
+            &:hover {
+                background: #9F8FFF;
+                
+                .lesson-row, i {
+                    color: var(--white);
+                }
+            }
+        }
+        
+        .lesson-row {
+            color: black;
+        
+            .type-icon {
+                display: none;
+            }
+        }
+        
+        .lesson-active {
+            color: var(--white);
+        }
+        
+        .fa-check-circle {
+            color: var(--purple);
+        }
+    }
+    
+    #returnToOverview {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        color: var(--grey1);
+        
+        &::before {
+            content: '←';
+            opacity: 100;
+            position: relative;
+            font-size: 16px;
+            color: var(--grey2);
+            top: 1px;
+        }
+    }
+    
+    #left-nav-return-text {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    #lp-footer {
+        a.prev-lesson-button i {
+            display: none;
+        }
+    
+        .button-prev-title {
+            span {
+                background: var(--purple);
+                border-radius: 30px;
+                padding: 16px 38px;
+                border: none;
+                color: var(--white) !important;
+                font-size: 13px;
+                font-weight: 400;
+                position: relative;
+                top: 2px;
+        
+                &::before {
+                    content: '←';
+                    position: relative;
+                    font-size: 16px;
+                    top: 2px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        
+        .next-lesson-button a {
+            border-radius: 30px;
+            padding: 10px 50px;
+            
+            &::after {
+                content: '→';
+                position: relative;
+                font-size: 16px;
+                top: 2px;
+                margin-left: 5px;
+            }
+        }
+    }
+    
+    &#main-container {
+        flex-direction: column;
+    }
+    
+    #lp-wrapper {
+        font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+        padding: 115px 5% 50px;
+        margin: 0;
+    }
+    
+    // body.lesson-fullscreen #lp-wrapper #lesson-body #lesson-main-inner #lesson-main-content {
+    //     bottom: 50px !important;
+    // }
+
+    // /* -- fix for scorm height discrepancies -- */
+    // body.lesson-fullscreen #lp-wrapper #lesson-body #scaled_embedded_content {
+    //     height: 100% !important;
+    // }
+}
+
+/* --------------------------------------- */
+/* --------------- quizzes --------------- */
+/* ----------- #quiz-container ----------- */
+/* --------------------------------------- */
+
+#quiz-container {
+    .question,
+    .start-quiz,
+    .completed-quiz .results,
+    .completed-quiz .question-responses .show-question {
+        font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+        background: var(--white);
+        box-shadow: 0px 35px 105px rgba(16, 30, 54, 0.25);
+        width: 80%;
+        margin: 20px auto;
+        padding: 30px 50px;
+        border-radius: 20px;
+    }
+
+    .text-center button {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        margin: 30px auto;
+    }
+    
+    .completed-quiz {
+        .star {
+            display: none;
+        }
+        
+        .question-responses {
+            .correct {
+                color: var(--green);
+            }
+            
+            .question-feedback {
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+/* ============================================= */
+/* =============== MEDIA QUERIES =============== */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+@media (min-width: 1px) {
+    .sj-page-curriculum {
+        .top-row-grey {
+            padding: 0;
+        }
+
+        #cp-content {
+            h2 {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #curriculum-list {
+                .lesson-row {
+                    height: 70px;
+                    
+                    .title {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sj-page-lesson {
+        #menu-btn {
+            display: none;
+        }
+
+        #lp-content {
+            #lesson-main-content {
+                .course-text-content {
+                    max-width: 500px;
+
+                    h4 {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 560px) {
+    .sj-page-curriculum {
+        .top-row-grey {
+            padding: 70px 55px 55px;
+        }
+
+        #cp-content {
+            h2 {
+                display: block;
+            }
+
+            #curriculum-list {
+                .lesson-row {
+                    height: 40px;
+                    
+                    .title {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 768px) {
+    .sj-page-curriculum {
+        
+    }
+
+    .sj-page-lesson {
+        #menu-btn {
+            display: block;
+        }
+        
+        #lp-content {
+            #lesson-main-content {
+                .course-text-content {
+                    h4 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1000px) {
+    .sj-page-curriculum {
+        
+    }
+
+    .sj-page-lesson {
+        #lp-content {
+            #lesson-main-content {
+                .course-text-content {
+                    max-width: 1150px;
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1200px) {
+    .sj-page-curriculum {
+        
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1340px) {
+    .sj-page-curriculum {
+        
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1800px) {
+    .sj-page-curriculum {
+        
+    }
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* ============================================= */
+/* ============================================= */
