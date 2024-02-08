@@ -1,0 +1,420 @@
+/* -------------------------------------------------------- */
+/* ------------------------- PAGE ------------------------- */
+/* ---------------------- .plans-page --------------------- */
+/* ----- .getting-started-with-clickup-workshop-bundle ---- */
+/* ----------------- .sj-page-detail-plan ----------------- */
+/* -------------------------------------------------------- */
+
+.plans-page,
+.getting-started-with-clickup-workshop-bundle {
+    #skilljar-content {
+        padding-top: 0px !important;
+
+        .top-row-grey,
+        .catalog-header {
+            font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+            background: url('https://clickup.com/landing/images/clickup-university/cuu_v2.1bg_2x_min.png') no-repeat center bottom;
+            background-size: cover;
+            padding: 80px 0 0;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: none !important;
+        }
+
+        .dp-promo-image-wrapper {
+            display: none;
+        }
+
+        .dp-summary-wrapper,
+        .catalog-header {
+            width: 100%;
+            text-align: center !important;
+            border: none;
+
+            #plan-breadcrumbs {
+                font-size: 14px;
+
+                a {
+                    color: var(--grey0);
+                    padding: 0 5px;
+                }
+
+                .live-training-link {
+                    font-weight: 700;
+                }
+            }
+
+            h1, h2 {
+                font-family: "Axiforma", "Open Sans", "Helvetica Neue", sans-serif !important;
+            }
+
+            h1 {
+                color: var(--grey0);
+                font-size: 60px;
+                font-weight: 800;
+                line-height: 80px;
+                margin: 14px 0 30px;
+            }
+
+            h2 {
+                color: var(--grey2);
+                font-size: 17px;
+                font-weight: 400;
+                max-width: 960px;
+                margin: 0 auto 25px;
+            }
+        }
+
+        a.purchase-button,
+        a.license-code__apply {
+            background-color: var(--green);
+            box-shadow: 0px 10px 25px rgba(0, 184, 132, 0.4);
+            padding: 21px 37px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        a.license-code__apply {
+            width: 120px;
+            max-width: 160px;
+            padding: 11px 17px;
+        }
+
+        a.license-code__link,
+        a.license-code__cancel {
+            background: none;
+            box-shadow: none;
+            color: var(--green);
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        a.license-code__cancel {
+            margin-right: 40px;
+        }
+
+        .license-code__text {
+            display: none;
+            margin-bottom: 30px;
+        }
+
+        .license-code__input-wrapper {
+            margin-bottom: 30px;
+
+            input {
+                text-align: center;
+                max-width: 400px;
+                border-radius: 30px;
+                margin: auto;
+                padding: 20px;
+                margin-bottom: 10px;
+            }
+            
+            .pull-right,
+            .pull-left {
+                float: unset;
+            }
+        }
+
+        .push-3 {
+            left: unset;
+        }
+
+        #dp-details {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 10px;
+
+            .row.hide-for-small {
+                display: none !important;
+
+                &::before,
+                &::after {
+                    display: none;
+                }
+
+                .columns {
+                    width: unset !important;
+                }
+            }
+        }
+
+        .padded-side-bottom,
+        ul.dp-curriculum,
+        ul.dp-curriculum li {
+            padding: 0;
+        }
+    }
+}
+
+/* ============================================= */
+/* =============== MEDIA QUERIES =============== */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+@media (min-width: 1px) {
+    .plans-page {
+        #skilljar-content {
+            .dp-summary-wrapper {
+                padding: 30px 10px 80px;
+            }
+
+            .section-container.tabs {
+                font-size: 18px;
+                // text-align: center;
+            }
+        }
+    }
+
+    .getting-started-with-clickup-workshop-bundle {
+        .search-container {
+            display: none !important;
+        }
+
+        #skilljar-content {
+            .catalog-header {
+                padding: 120px 100px 100px !important;
+            }
+
+            #catalog-content {
+                padding: 0 10px !important;
+                margin: 60px auto;
+                max-width: 1200px;
+
+                #catalog-courses {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+
+                    a.coursebox-container {
+                        flex-direction: column;
+                        height: auto;
+                        padding: 30px 30px 100px;
+                        box-shadow: 0px 15px 45px rgba(16, 30, 54, 0.06);
+                        border-radius: 30px;
+                        margin-bottom: 0;
+
+                        .course-time {
+                            padding: 30px;
+                            margin: 0 !important;
+
+                            span {
+                                margin-top: 7px;
+                            }
+                        }
+
+                        .coursebox-image {
+                            &::before {
+                                content: ' ';
+                                display: block;
+                                position: relative;
+                                top: 40px;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                font-weight: 700;
+                            }
+
+                            img {
+                                margin: 56px auto 20px !important;
+                                height: auto;
+                                width: auto;
+                                border-radius: 15px;
+                            }
+                        }
+
+                        .coursebox-text {
+                            margin: 0;
+
+                            .plan-label {
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                        }
+
+                        .coursebox-callout {
+                            &:not(.course-time) {
+                                font-size: 14px;
+                                font-weight: 800;
+                                padding: 20px;
+                                border-radius: 50px;
+                                position: absolute;
+                                bottom: 30px;
+                                margin: 0;
+                            }
+                        }
+
+                        .storefront-price {
+                            display: none;
+                        }
+
+                        // Course type labels
+                        &.tag-workshop {
+                            .coursebox-image::before {
+                                content: "Workshop";
+                            }
+
+                            &.tag-novice {
+                                .coursebox-image::before {
+                                    content: "Workshop: Novice";
+                                    color: var(--purple);
+                                } 
+                            }
+
+                            &.tag-intermediate {
+                                .coursebox-image::before {
+                                    content: "Workshop: Intermediate";
+                                    color: var(--cyan);
+                                } 
+                            }
+                            
+                            &.tag-expert {
+                                .coursebox-image::before {
+                                    content: "Workshop: Expert";
+                                    color: var(--green);
+                                } 
+                            }
+                        }
+
+                        &.tag-webinar {
+                            .coursebox-image::before {
+                                content: "Webinar";
+                            }
+
+                            &.tag-novice {
+                                .coursebox-image::before {
+                                    content: "Webinar: Novice";
+                                    color: var(--purple);
+                                } 
+                            }
+
+                            &.tag-intermediate {
+                                .coursebox-image::before {
+                                    content: "Webinar: Intermediate";
+                                    color: var(--cyan);
+                                } 
+                            }
+                            
+                            &.tag-expert {
+                                .coursebox-image::before {
+                                    content: "Webinar: Expert";
+                                    color: var(--green);
+                                } 
+                            }
+                        }
+
+                        &.tag-on-demand {
+                            .coursebox-image::before {
+                                content: "On-Demand";
+                            }
+
+                            &.tag-novice {
+                                .coursebox-image::before {
+                                    content: "On-Demand: Novice";
+                                    color: var(--purple);
+                                } 
+                            }
+
+                            &.tag-intermediate {
+                                .coursebox-image::before {
+                                    content: "On-Demand: Intermediate";
+                                    color: var(--cyan);
+                                } 
+                            }
+                            
+                            &.tag-expert {
+                                .coursebox-image::before {
+                                    content: "On-Demand: Expert";
+                                    color: var(--green);
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 560px) {
+  
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 768px) {
+    .plans-page {
+        #skilljar-content {
+            .section-container.tabs {
+                font-size: 16px;
+                // text-align: left;
+            }
+
+            #dp-details {
+                .row.hide-for-small {
+                    display: grid !important;
+                    grid-template-columns: 2fr 1fr;
+                }
+            }
+        }
+    }
+
+    .getting-started-with-clickup-workshop-bundle {
+        #skilljar-content {
+            #catalog-content {
+                #catalog-courses {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 875px) {
+    .plans-page {
+        #skilljar-content {
+            .dp-summary-wrapper {
+                padding: 60px 100px;
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 1000px) {
+    .getting-started-with-clickup-workshop-bundle {
+        #skilljar-content {
+            #catalog-content {
+                #catalog-courses {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width: 2000px) {
+    .getting-started-with-clickup-workshop-bundle {
+        #skilljar-content {
+            .catalog-header {
+                h2 {
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* ============================================= */
+/* ============================================= */
