@@ -1,0 +1,50 @@
+<style>
+  #catalog-courses {
+    justify-content: center;  
+  }
+  a.coursebox-container {
+      background-color: #e7f5ee;
+      box-shadow: none;
+      width: 350px;
+      padding: 0 0 30px;
+      border-radius: 0;
+      border-bottom: 7.5px solid #e7f5ee;
+      transition: .3s ease;
+  }
+  a.coursebox-container:hover {
+      border: none;
+      box-shadow: none;
+      border-bottom: 7.5px solid #4ebe8d;
+      transform: translate(0, -4px);
+  }
+   a.coursebox-container:after{
+      background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2025%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20stroke%3D%22%231264A3%22%20stroke-width%3D%222%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M1.548%207h21.904%22%2F%3E%3Cpath%20stroke-linejoin%3D%22round%22%20d%3D%22M17%201l7%206-7%206%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+      bottom: 16px;
+      content: '';
+      height: 14px;
+      position: absolute;
+      right: 26px;
+      width: 25px;
+  } 
+  a.coursebox-container.course .coursebox-image {
+      background: transparent;
+  }
+  a.coursebox-container.course .coursebox-image img {
+      height: 100px;
+      margin: 12px;
+  }
+  a.coursebox-container .coursebox-text {
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 39px;
+      margin: 0;
+  }  
+  a.coursebox-container .coursebox-text-description {
+      font-size: 18px;
+      line-height: 21px;
+  }
+  a.coursebox-container .coursebox-callout {
+      display: none;
+  }  
+  </style>
+  <!-- END Walkthrough developer center tile design, add to page source code -->
