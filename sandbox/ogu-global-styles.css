@@ -1,3 +1,4 @@
+*{background: #000000 !important;}
 #catalog-search-info .tile-counter-container {
 display: none;
 }
@@ -58,7 +59,7 @@ border-width: 1px 0px 0px 0px !important;
 .registered-course-background{
 margin-top: 20px;
 background: -o-linear-gradient(95deg, rgba(31,53,89,0.92) 5%, rgba(22,92,171,0.92) 60%, rgba(29,110,204,0.92) 90%);
-background: linear-gradient(355deg, rgba(31,53,89,0.92) 5%, rgba(22,92,171,0.92) 60%, rgba(29,110,204,0.92) 90%);
+background: linear-gradient(355deg, rgba(31,53,89,0.92) 5%, rgba(22,92,171,0.92) 60%, rgba(29,110,204,0.92) 90%);*
 }
 
 
