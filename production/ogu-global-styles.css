@@ -13,6 +13,15 @@ display: none;
 margin-top:25px !important;
 }
 
+#scorm-content body{
+transform: scale(0.65) !important;
+}
+
+#scorm-content #wrapper{
+left:-10% !important;
+top:-10% !important;
+}
+
 /* Calendar and live training stuff */
 
 .sj-text-already-purchased{
